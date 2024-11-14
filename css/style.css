@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "HARRYP";
+    src: url(../fonts/HARRYP__.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #808080; /* Fond gris */
     color: #fff;
@@ -29,7 +36,7 @@ header {
 
 h1 {
     font-size: 70px;
-    font-family: url(../fonts/HARRYP__.TTF);
+    font-family: "HARRYP";
     margin: 0;
 }
 
@@ -80,7 +87,7 @@ main {
 
 h2 {
     font-size: 60px;
-    font-family: url(../fonts/HARRYP__.TTF);
+    font-family: "HARRYP";
     margin-bottom: 80px;
     align-self: flex-start; /* S'aligne avec le premier blason */
 }
