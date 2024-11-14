@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>La coupe des maisons</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/Hogwarts-Logo.png" alt="blason_logo" class="logo">
+            <h1>La coupe des maisons</h1>
+            <img src="img/Hogwarts-Logo.png" alt="blason_logo" class="logo">
+        </div>
+    </header>
+    <main>
+        <div class="blasons-container">
+            <div class="blason-row">
+                <img src="img/Blason_des_Gryffondor.webp" alt="blason 1">
+                <input type="text" class="input">
+                <img src="img/plusGryf.png" alt="plusRouge" class="plus" onclick="randomizeClassement()">
+            </div>
+            <div class="blason-row">
+                <img src="img/Blason_des_Poufsouffle.webp" alt="blason 2">
+                <input type="text" class="input">
+                <img src="img/plusNoir.png" alt="plusVertAFaire" class="plus" onclick="randomizeClassement()">
+            </div>
+            <div class="blason-row">
+                <img src="img/Blason_des_Serpentard.webp" alt="blason 3">
+                <input type="text" class="input">
+                <img src="img/plusPouf.png" alt="plusJaune" class="plus" onclick="randomizeClassement()">
+            </div>
+            <div class="blason-row">
+                <img src="img/Blason_des_Serdaigle.webp" alt="blason 4">
+                <input type="text" class="input">
+                <img src="img/plusNoir.png" alt="plusBleuAFaire" class="plus" onclick="randomizeClassement()">
+            </div>
+        </div>
+        <div class="classement-container">
+            <h2>Classement</h2>
+            <div class="resultats"></div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script/index.js"></script>
+</body>
+</html>
+
