@@ -7,13 +7,24 @@
     <title>La coupe des maisons</title>
 </head>
 <body>
-    <header>
+
+    <!--j'ai créé une classe contenu du header avec dedans 1 logo 1 h1 et 1 logo 
+            que j'ai nommé en class logo pour que ce soit plus facile à rappeller en css ou 
+                ailleurs -->
+
+    <header> 
         <div class="header-content">
             <img src="img/Hogwarts-Logo.png" alt="blason_logo" class="logo">
             <h1>La coupe des maisons</h1>
             <img src="img/Hogwarts-Logo.png" alt="blason_logo" class="logo">
         </div>
     </header>
+
+<!--J'ai créé  un container pour les dispositions identiques 1img 1 input-text et 1 
+        logo 'plus' clickable avec randomize + le nom de mon titre h2 classement pour 
+        le 'plus' avec une div pour ces 4 container qui eux même ont une div en ligne row
+        j'aurai pu l'appeller blason-row1, blason-row2, etc ou cacahuete1, etc (merci Mat':) -->
+
     <main>
         <div class="blasons-container">
             <div class="blason-row">
@@ -37,6 +48,8 @@
                 <img src="img/plusNoir.png" alt="plusBleuAFaire" class="plus" onclick="randomizeClassement()">
             </div>
         </div>
+        <!--création d'une div classement en container et une div pour 
+            "résultats" bien plus facile à manipuler en css-->
         <div class="classement-container">
             <h2>Classement</h2>
             <div class="resultats"></div>

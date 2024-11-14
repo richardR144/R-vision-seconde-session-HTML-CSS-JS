@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 @font-face {
     font-family: "HARRYP";
     src: url(../fonts/HARRYP__.TTF);
@@ -16,6 +18,8 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
+                    /*HEADER*/
 
 header {
     background-color: grey;
@@ -40,6 +44,8 @@ h1 {
     margin: 0;
 }
 
+                /*main disposition*/
+
 main {
     display: flex;
     justify-content: space-between;
@@ -60,6 +66,7 @@ main {
 .blason-row img, .blason-row .input, .blason-row .plus {
     margin-right: 10px;
 }
+/*Au dessus je met une margin- droite à chaque élément de ma ligne*/
 
 .blasons img {
     width: 100px;
