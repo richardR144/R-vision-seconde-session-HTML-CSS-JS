@@ -56,8 +56,15 @@
         <div class="classement-container">
             <h2>Classement</h2>
             <div class="resultats"></div>
-            <!--Ajout d'un bouton "resetClassement" en lien avec mon js-->
-            <button onclick="resetClassement()">reset classement</button>
+            <div class="total-scores">
+                <p>Gryffondor: <span id="gryffondor-score">0</span></p>
+                <p>Poufsouffle: <span id="poufsouffle-score">0</span></p>
+                <p>Serpentard: <span id="serpentard-score">0</span></p>
+                <p>Serdaigle: <span id="serdaigle-score">0</span></p>
+            </div>
+            <!--Ajout d'un bouton "resetClassement" et 1 "updateTotalblabla" en lien avec mon js-->
+            <button id="button" onclick="resetClassement()">reset classement</button>
+            <button id="button1" onclick="updateTotalScores()">Mettre à jour les scores</button>
         </div>
     </main>
     <footer></footer>

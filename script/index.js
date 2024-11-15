@@ -11,17 +11,56 @@ l'élément (input1,input2, etc),l'input.value c'est sa valeur
 */
 function saveInputs() {
     const inputs = document.querySelectorAll('.input');
+    const inputs = document.querySelectorAll('.scores');
     inputs.forEach((input, index) => {
        localStorage.setItem('input${index + 1}', input.value);
     });
+    //pense aux MAJ les scores cumulés + chargement page
+    updateTotalScores();
 }
 
 // Fonction pour charger les inputs depuis le local storage
 function loadInputs() {
     const inputs = document.querySelectorAll('.input');
+    const inputs = document.querySelectorAll('.score');
     inputs.forEach((input, index) => {
         input.value = localStorage.getItem(`input${index + 1}`) || '';
     });
+    //MAJ les scores au chargement de la page
+    updateTotalScores();
+}
+// je déclare mes scores initiaux pour chaque maison à 0
+function updateTotalScores() {
+    let gryffondorScore = 0;
+    let poufsouffleScore = 0;
+    let serpentardScore = 0;
+    let serdaigleScore = 0;
+//je fais une boucle pour chacun des class .score et les places dans une sorte de collection scores
+
+    const scores = document.querySelectorAll('.score');
+    /*cette boucle foreach parcourt tous les éléments et pour chacun des éléments 
+    elle convertie en entier avec "parseInt(score.value)", else if, sinon si, ça affiche 0 grâce à (OU) ||, ensuite elle 
+    vérifie avec if si l'index est à 0, la valeur est ajoutée au score de Griffondord, si 
+    c'est 1 c'est Poufsouffle, 2 c'est Serpentard et 3 pour Serdaigle 
+    */
+        scores.forEach((score, index) => {
+        const scoreValue = parseInt(score.value) || 0;
+            if (index === 0) {
+                gryffondorScore += scoreValue;
+            } else if (index === 1) {
+                poufsouffleScore += scoreValue;
+            } else if (index === 2) {
+                serpentardScore += scoreValue;
+            } else if (index === 3) {
+                serdaigleScore += scoreValue;
+            }
+        });
+
+// on récupère le get élément par son Id et on les maj
+    document.getElementById('gryffondor-score').textContent = gryffondorScore;
+    document.getElementById('poufsouffle-score').textContent = poufsouffleScore;
+    document.getElementById('serpentard-score').textContent = serpentardScore;
+    document.getElementById('serdaigle-score').textContent = serdaigleScore;
 }
 
 // Fonction pour mélanger les blasons aléatoirement
