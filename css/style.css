@@ -85,9 +85,8 @@ main {
 .plus {
     width: 150px;
     height: 150px;
-    cursor: pointer; 
-    /*Change le curseur en une magic-wand (baguette magique), 
-        lorsque l'on passe la souris sur les éléments de la class .plus*/
+    cursor: grab;   
+    /*Change le curseur en un grab, lorsque l'on passe la souris sur les éléments de la class .plus*/
 }
 
 .classement-container {
