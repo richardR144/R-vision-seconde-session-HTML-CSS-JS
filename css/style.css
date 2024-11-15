@@ -13,6 +13,8 @@
     font-style: normal;
 }
 
+
+
 body {
     background-color: #808080; /* Fond gris */
     color: #fff;
@@ -83,6 +85,9 @@ main {
 .plus {
     width: 150px;
     height: 150px;
+    cursor: pointer; 
+    /*Change le curseur en une magic-wand (baguette magique), 
+        lorsque l'on passe la souris sur les éléments de la class .plus*/
 }
 
 .classement-container {
@@ -111,6 +116,10 @@ h2 {
     height: 100px;
     margin-bottom: 10px;
 }
+
+
+    
+
 
 
 
